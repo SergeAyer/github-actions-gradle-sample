@@ -2,9 +2,18 @@ plugins {
     id 'application'
 }
 
-application {
-    mainClass = 'Ex1'
+tasks.register('runEx1', JavaExec) {
+    group = 'application'
+    mainClass.set('Ex1')
+    classpath = sourceSets.main.runtimeClasspath
 }
+
+tasks.register('runEx2', JavaExec) {
+    group = 'application'
+    mainClass.set('Ex2')
+    classpath = sourceSets.main.runtimeClasspath
+}
+
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -24,9 +33,4 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
     }
-}
-
-application {
-    // Define the main class for the application.
-    mainClass = 'org.example.App'
 }
