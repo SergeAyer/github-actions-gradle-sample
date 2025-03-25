@@ -11,4 +11,6 @@ plugins {
 }
 
 rootProject.name = 'github-actions-gradle-sample'
-include('app')
+
+include(":Series3")
+// etc.
