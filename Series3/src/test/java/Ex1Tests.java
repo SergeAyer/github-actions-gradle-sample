@@ -73,9 +73,9 @@ public class Ex1Tests {
         Ex1.main(args);
         // get and check the output message
         output = buffer.toString();
-        final String positiveDiscriminantString = "Two real solutions: x1 = -1.0, x2 = -2.0\r";
+        final String positiveDiscriminantString = "Two real solutions: x1 = -1.0, x2 = -2.0";
         Assert.assertTrue("Expected solution for " + Arrays.toString(args) + " should contain \"" + positiveDiscriminantString + "\"",
-                output.contains(positiveDiscriminantString));
+                output.trim().contains(positiveDiscriminantString));
         buffer.reset();
 
         // discriminant < 0
