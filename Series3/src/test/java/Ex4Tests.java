@@ -5,7 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
 
-public class Ex1Tests {
+public class Ex4Tests {
     @Test
     public void testSolution() {
         // Redirect standard output
@@ -16,7 +16,7 @@ public class Ex1Tests {
         // initial test for the test to pass without implementation (as delivered to Jetbrains)
         // could be removed in the case that the solution could be entirely hidden
         String[] initargs = {"10", "0", "0"};
-        Ex1.main(initargs);
+        Ex4.main(initargs);
         String initoutput = buffer.toString();
         String[] initsplitOutput = initoutput.split("\n");
         if (initsplitOutput != null && initsplitOutput.length > 1) {
@@ -30,7 +30,7 @@ public class Ex1Tests {
 
         // infinite number of solutions
         String[] args = {"0", "0", "0"};
-        Ex1.main(args);
+        Ex4.main(args);
         // get and check the output message
         String output = buffer.toString();
         final String infiniteString = "Infinitely many solutions";
@@ -40,7 +40,7 @@ public class Ex1Tests {
 
         // no solution
         args = new String[]{"0", "0", "1"};
-        Ex1.main(args);
+        Ex4.main(args);
         // get and check the output message
         output = buffer.toString();
         final String noSolutionString = "No solution, as : 1.0 != 0";
@@ -50,7 +50,7 @@ public class Ex1Tests {
 
         // 1st degree
         args = new String[]{"0", "2", "4"};
-        Ex1.main(args);
+        Ex4.main(args);
         // get and check the output message
         output = buffer.toString();
         final String firstDegreeString = "1st degree equation: x = -2.0";
@@ -60,7 +60,7 @@ public class Ex1Tests {
 
         // discriminant == 0
         args = new String[]{"1", "2", "1"};
-        Ex1.main(args);
+        Ex4.main(args);
         // get and check the output message
         output = buffer.toString();
         final String zeroDiscriminantString = "Single solution: x = -1.0";
@@ -70,7 +70,7 @@ public class Ex1Tests {
 
         // discriminant > 0
         args = new String[]{"1", "3", "2"};
-        Ex1.main(args);
+        Ex4.main(args);
         // get and check the output message
         output = buffer.toString();
         final String positiveDiscriminantString = "Two real solutions: x1 = -1.0, x2 = -2.0";
@@ -80,7 +80,7 @@ public class Ex1Tests {
 
         // discriminant < 0
         args = new String[]{"1", "2", "2"};
-        Ex1.main(args);
+        Ex4.main(args);
         // get and check the output message
         output = buffer.toString();
         final String complexString1 = "Two complex solutions :";

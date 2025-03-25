@@ -1,4 +1,4 @@
-public class Ex1 {
+public class Ex4 {
     //----------------------------------------------------------------------------
     // Values a, b and c can be given as program arguments, otherwise they
     // will be read in dialog boxes.
