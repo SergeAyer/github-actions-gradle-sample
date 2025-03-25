@@ -57,7 +57,7 @@ public class Ex5Tests {
         Ex5.main(args);
         // get output message
         output = buffer.toString();
-        final String multneither5nor6String = "n is divisible by neither 5 nor 6\r\n";
+        final String multneither5nor6String = "n is divisible by neither 5 nor 6\n";
         Assert.assertTrue("Expected solution for n == 31 should contain \"" + multneither5nor6String + "\"",
                 output.contains(multneither5nor6String));
         buffer.reset();
