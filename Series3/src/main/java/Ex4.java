@@ -20,6 +20,6 @@ public class Ex4 {
 
         System.out.println("Equation: ("+a+")x\u00B2 + ("+b+")x + ("+c+") == 0");
         double x1, x2, xj, discriminant;  // xj : imaginary part of the complex solution
-        System.out.println("Not yet implemented!");
+        System.out.println("Fail");
     }
 }
