@@ -2,18 +2,35 @@ plugins {
     id 'application'
 }
 
-tasks.register('runEx1', JavaExec) {
+tasks.register('runEx4', JavaExec) {
     group = 'application'
-    mainClass.set('Ex1')
+    mainClass.set('Ex4')
     classpath = sourceSets.main.runtimeClasspath
 }
 
-tasks.register('runEx2', JavaExec) {
+tasks.register('runEx5', JavaExec) {
     group = 'application'
-    mainClass.set('Ex2')
+    mainClass.set('Ex5')
     classpath = sourceSets.main.runtimeClasspath
 }
 
+tasks.register('runEx6', JavaExec) {
+    group = 'application'
+    mainClass.set('Ex6')
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+tasks.register('runEx7', JavaExec) {
+    group = 'application'
+    mainClass.set('ex7.MainVarA')
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+tasks.register('runEx7_2', JavaExec) {
+    group = 'application'
+    mainClass.set('ex7.MainVarB')
+    classpath = sourceSets.main.runtimeClasspath
+}
 
 repositories {
     // Use Maven Central for resolving dependencies.
