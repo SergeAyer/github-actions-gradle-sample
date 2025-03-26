@@ -20,6 +20,33 @@ public class Ex4 {
 
         System.out.println("Equation: ("+a+")x\u00B2 + ("+b+")x + ("+c+") == 0");
         double x1, x2, xj, discriminant;  // xj : imaginary part of the complex solution
-        System.out.println("Fail");
+        if (a==0) {
+            if (b==0) {
+                if (c==0) {
+                    System.out.println("Infinitely many solutions");
+                } else {
+                    System.out.println("No solution, as : "+c+" != 0");
+                }
+            } else {
+                x1 = -c/(double)b;
+                System.out.println("1st degree equation: x = " + x1);
+            }
+        } else {
+            discriminant = b*b-4*a*c;
+            if (discriminant>0) {
+                x1 = (-b + Math.sqrt(discriminant))/(2*a);
+                x2 = (-b - Math.sqrt(discriminant))/(2*a);
+                System.out.println("Two real solutions: x1 = " + x1 +", x2 = " + x2);
+            } else if (discriminant==0) {
+                x1 = -b /(double)(2*a);
+                System.out.println("Single solution: x = " + x1);
+            } else {
+                x1 = -b/(double)(2*a);
+                xj = Math.sqrt(-discriminant)/(2*a);
+                System.out.println("Two complex solutions : ");
+                System.out.println("x1 = ("+ x1 + ") + (" + xj + ")i, ");
+                System.out.println("x2 = ("+ x1 + ") - (" + xj + ")i"  );
+            }
+        }
     }
 }
