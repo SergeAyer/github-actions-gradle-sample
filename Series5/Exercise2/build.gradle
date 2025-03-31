@@ -2,8 +2,6 @@ plugins {
     id 'java'
 }
 
-// Ici, on précise que le code source se trouve dans le dossier "src"
-// et les tests dans le dossier "test" (par rapport à l'emplacement du build.gradle).
 sourceSets {
     main {
         java.srcDir 'src'
@@ -15,8 +13,6 @@ sourceSets {
 
 tasks.register('runEx', JavaExec) {
     group = 'application'
-    // Remplacez 'Main' par le nom complet de la classe si elle est dans un package.
-    // Par exemple, si Main.java déclare "package ex7;", utilisez 'ex7.Main'
     mainClass.set('Main')
     classpath = sourceSets.main.runtimeClasspath
 }
@@ -26,7 +22,6 @@ repositories {
 }
 
 dependencies {
-    // Ici, j'utilise directement les coordonnées Maven pour JUnit et Guava.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
     testImplementation 'org.junit.vintage:junit-vintage-engine:5.10.0'
     testImplementation 'junit:junit:4.13.2'
