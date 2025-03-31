@@ -12,5 +12,4 @@ plugins {
 
 rootProject.name = 'github-actions-gradle-sample'
 
-include(":Series3")
-// etc.
+include("Series3", "Series5:Exercise2", "Series5:Exercise3", "Series5:Exercise4")
