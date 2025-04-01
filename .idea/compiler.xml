@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="github-actions-gradle-sample.Exercise2" target="21" />
+      <module name="github-actions-gradle-sample.Exercise2.main" target="21" />
+      <module name="github-actions-gradle-sample.Exercise2.test" target="21" />
+      <module name="github-actions-gradle-sample.Exercise3" target="21" />
+      <module name="github-actions-gradle-sample.Exercise3.main" target="21" />
+      <module name="github-actions-gradle-sample.Exercise3.test" target="21" />
+      <module name="github-actions-gradle-sample.Series5.Exercise2" target="21" />
+      <module name="github-actions-gradle-sample.Series5.Exercise2.main" target="21" />
+      <module name="github-actions-gradle-sample.Series5.Exercise2.test" target="21" />
+      <module name="github-actions-gradle-sample.Series5.Exercise3" target="21" />
+      <module name="github-actions-gradle-sample.Series5.Exercise3.main" target="21" />
+      <module name="github-actions-gradle-sample.Series5.Exercise3.test" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
