@@ -10,6 +10,6 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
 }
 
-rootProject.name = 'github-actions-gradle-sample'
+rootProject.name = 'Series5-example'
 
-include("Series5:Exercise2", "Series5:Exercise3", "Series5:Exercise4", "Series5:Exercise5")
+include("Exercise2", "Exercise3", "Exercise4", "Exercise5")
